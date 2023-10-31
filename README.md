@@ -155,3 +155,64 @@ Ver un gráfico de ramas:
   <img src="./assets/img/img19.jpg" alt="verificar los cambios" width="400px">
 </div>
 
+## Agregar una dirección remota a un repositorio Git existente
+
+12. Crear un respositorio nuevo en GitHub. 
+Se recomienda tener configurada la llave pública para realizar la conexión con la dirección SSH. Si no tienes la configuración revisa la sección "Generar llave pública".
+
+<div style="text-align:center">
+  <img src="./assets/img/img20.jpg" alt="crear un reposotorio en github" width="400px">
+</div>
+
+- Copia la direcció SSH del nuevo repositorio.
+
+<div style="text-align:center">
+  <img src="./assets/img/img21.jpg" alt="repositorio creado" width="400px">
+</div>
+
+13. `git remote add <nombre_remoto> <URL_del_repositorio>`: Este comando agrega una nueva dirección remota a un repositorio Git existente. Puedes hacer la configuración desde cualquier rama.
+
+- `<nombre_remoto>`: Esto es un nombre descriptivo que le das a la dirección remota. Por convención, "origin" es el nombre más comúnmente utilizado, pero puedes elegir cualquier nombre que tenga sentido para ti. El nombre se utiliza posteriormente para referirse a la dirección remota en otros comandos Git.
+
+- `<URL_del_repositorio>`: Aquí debes proporcionar la URL del repositorio remoto al que deseas conectarte. La URL puede ser una dirección HTTP/HTTPS o una dirección SSH, dependiendo de cómo esté configurado el repositorio remoto.
+
+    ```bash
+    git remote add origin git@github.com:usergithub/cohorte-x-sesions.git
+    ```
+
+<div style="text-align:center">
+  <img src="./assets/img/img22.jpg" alt="agregar repositorio remoto" width="400px">
+</div>
+
+- `git remote`: Se utiliza en Git para mostrar una lista de las direcciones remotas (remotes) configuradas en un repositorio Git junto con sus URL asociadas. 
+- `git remote -v`: La opción -v o --verbose muestra información detallada sobre cada una de las direcciones remotas.
+
+    ```bash
+    git remote -v
+    ```
+
+<div style="text-align:center">
+  <img src="./assets/img/img23.jpg" alt="mostrar los repositorios remotos configurados" width="400px">
+</div>
+
+## Subir cambios locales a GitHub.
+
+11. `git push origin main`: Este comando se utiliza en Git para enviar (subir) tus cambios locales en la rama main de tu repositorio local al repositorio remoto (GitHub) denominado "origin".
+
+    ```bash
+    git push origin main
+    ```
+
+<div style="text-align:center">
+  <img src="./assets/img/img24.jpg" alt="subir cambios al repositorio remoto" width="400px">
+</div> 
+
+- Si deseas subir otra rama tendrás que idicarla `git push origin basic-html`.
+
+12. Verificar los cambios en GitHub en la rama main.
+
+<div style="text-align:center">
+  <img src="./assets/img/img25.jpg" alt="subir cambios al repositorio remoto" width="400px">
+</div>
+
+- Puedes trabajar en otra rama y hacer merge a tu rama main, posteriormente hacer de nueva `git push origin main`. Puedes hacer varios `commits` y al final un solo `git push`.
