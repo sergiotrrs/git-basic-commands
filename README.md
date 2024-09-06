@@ -1,6 +1,12 @@
+
 # Instrucciones de Git
 
 A continuación se describen algunas de las instrucciones más comunes de Git, desde el comienzo de un proyecto.
+
+Asegurate que tenga la configuración básica y estar autenticado con tu clave SSH:
+
+- [Configuración_básica_git](Configuración_básica_git.md)
+- [Uso_de_SSH_con_Git-GitHub](Uso_de_SSH_con_Git-GitHub.md)
 
 ## Crear un repositorio local.
 
