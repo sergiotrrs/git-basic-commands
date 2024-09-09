@@ -152,9 +152,9 @@ Ejemplos de algunos commmits:
 
 `git log`: Este comando muestra información detallada sobre la historia de confirmaciones(`commit`), incluyendo quién realizó cada confirmación, cuándo se hizo y un resumen de los cambios realizados.
 
-    ```bash
-    git log
-    ```
+  ```bash
+  git log
+  ```
 
 <figure style="text-align:center">
   <img src="./assets/img/img07.jpg" alt="mostrar el historial de commits" width="400px">
@@ -407,6 +407,7 @@ Regresa a tu repositorio local y situate en la rama `main`, utiliza `git log --o
   ```bash
   git log --oneline --graph --all
   ```
+
 <figure style="text-align:center">
   <img src="./assets/img/img30.jpg" alt="verificar el estado de mis ramas" width="400px">
 </figure>
@@ -428,9 +429,9 @@ Regresa a tu repositorio local y situate en la rama `main`, utiliza `git log --o
 
 - Puedes verificar con `git log --oneline --graph --all` el estado de las ramas locales y remotas. En la siguiete imagen se muestra que la rama remota `origin/main` tiene un commit (ae1a138) más en la historia que la rama local `main` (093a21a).
 
-    ```bash
-    git log --oneline --graph --all
-    ```
+  ```bash
+  git log --oneline --graph --all
+  ```
 
 <figure style="text-align:center">
   <img src="./assets/img/img32.jpg" alt="uso de git log --oneline --graph --all" width="400px">
@@ -509,13 +510,13 @@ Cuando en Git ves que una rama aparece con el formato `main|MARGIN`, eso general
 
 Abre el archivo `index.html` y se mostrará 
 
-    ```html
-    <<<<<< HEAD
-     cambios locales 
-    ========
-     cambios remotos
-    >>>>> HASH de Commit
-    ```
+  ```html
+  <<<<<< HEAD
+    cambios locales 
+  ========
+    cambios remotos
+  >>>>> HASH de Commit
+  ```
 
 <figure style="text-align:center">
   <img src="./assets/img/img41.jpg" alt="conflictos en index.html" width="400px">
